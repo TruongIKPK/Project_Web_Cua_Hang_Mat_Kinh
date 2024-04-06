@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick-theme.css">
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.2-dist/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.js"></script>
+    <style>
+        #header{
+            background-color: #FFCD00;
+        }
+        #logo{
+            width: 150px;
+        }
+        #search{
+            width: 500px;
+        }
+        .dangnhap{
+            text-decoration: none;
+            color: black;
+        }
+        #sp{
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        .img-sp{
+            width: 200px;
+            margin-left: 40px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+        #brand-into img{
+            width: 100px;
+            height: 100px;
+        }
+        #brand-into .col-2{
+            width: 190px;
+            height: 190px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #brand-into .col-2:hover{
+            border: 2px solid rgb(20, 20, 82);
+        }
+        @media (max-width: 768px) {
+            .show-on-mobile {
+                display: inline-block;
+            }
+            .hide-on-mobile {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="fixed-top">
+    <nav class="navbar navbar-expand-md" id="header">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand"><img src="../Acsset/Logo.png" alt="logo" id="logo"></a>
+            <form action="" class="d-flex">
+                <input type="text" class="form-control me-2 hide-on-mobile" placeholder="Tìm gọng kính, kính mát, tròng kính..." id="search">
+                <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
+            </form>
+            <a href="#" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống 27 cửa hàng EYE Y-T</span> </a>
+            <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="#" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="#" class="hide-on-mobile dangnhap"> Đăng ký</a></div>
+            <a href="#" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid ">
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto ms-5">
+                    <li class="nav-item"><a href="#" class="nav-link">Gọng kính</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Kính mát</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Kính áp tròng</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Thương hiệu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<main>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-top:130px">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href=""><img src="../Acsset/carousel/hinh1.png" alt="" class="d-block w-100"></a>
+            </div>
+            <div class="carousel-item">
+                <a href=""><img src="../Acsset/carousel/hinh2.png" alt="" class="d-block w-100"></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container mt-5" id="sp">
+        <h1 class="container-fluid">SẢN PHẨM MỚI VỀ</h1>
+        <section class="regular slider">
+            <div class="img-thumbnail m-5 sp-into">
+              <img src="../Acsset/IMG_SANPHAM/IMG_KINHRAM/KinhRamEYEPLUS1224GONGDENMATXANH350,280(1).png" class="img-sp">
+              <h4>Gọng Kính 1224 350</h4>
+              <h3 style="color: red;">280.000 đ</h3>
+            </div>
+            <div class="img-thumbnail m-5 sp-into">
+              <img src="../Acsset/IMG_SANPHAM/IMG_KINHRAM/KinhRamEYEPLUS1224GONGDENMATXANH350,280(2).jpg"class="img-sp">
+              <h4>Gọng Kính 1224 350</h4>
+              <h3 style="color: red;">280.000 đ</h3>
+            </div>
+            <div class="img-thumbnail m-5 sp-into">
+              <img src="../Acsset/IMG_SANPHAM/IMG_KINHRAM/KinhRamEYEPLUS1224GONGDENMATXANH350,280(3).jpg"class="img-sp">
+              <h4>Gọng Kính 1224 350</h4>
+              <h3 style="color: red;">280.000 đ</h3>
+            </div>
+            <div class="img-thumbnail m-5 sp-into">
+              <img src="../Acsset/IMG_SANPHAM/IMG_KINHRAM/KinhRamEYEPLUS1224GONGDENMATXANH350,280(4).jpg"class="img-sp">
+              <h4>Gọng Kính 1224 350</h4>
+              <h3 style="color: red;">280.000 đ</h3>
+            </div>
+            <div class="img-thumbnail m-5 sp-into">
+              <img src="../Acsset/IMG_SANPHAM/IMG_KINHRAM/KinhRamEYEPLUS1618GONGDENMATXANH500,400(1).jpg"class="img-sp">
+              <h4>Gọng Kính 1224 350</h4>
+              <h3 style="color: red;">280.000 đ</h3>
+            </div>
+            <div class="img-thumbnail m-5 sp-into">
+              <img src="../Acsset/IMG_SANPHAM/IMG_KINHRAM/KinhRamEYEPLUS5252C1GONGDENMATDEN400,320(1).png"class="img-sp">
+              <h4>Gọng Kính 1224 350</h4>
+              <h3 style="color: red;">280.000 đ</h3>
+            </div>
+          </section>
+        <h1 class="container-fluid">BỘ SƯU TẬP MỚI</h1>
+        <h1 class="container-fluid">TRÒNG KÍNH CHÍNH HÃNG</h1>
+        <h1 class="container-fluid">THƯƠNG HIỆU</h1>
+        <div class="container" id="brand-into">
+            <div class="row">
+                <div class="col-2 btn"><img src="../Acsset/brand/ax.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/bolon.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/burberry.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/bvl.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/coach.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/dolce.jpg" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-2 btn"><img src="../Acsset/brand/fos.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/gucci.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/molsion.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/mont.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/oakley.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/prada.jpg" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-2 btn"><img src="../Acsset/brand/ray.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/tifany.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/tommy.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/ver.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/yves.jpg" alt=""></div>
+                <div class="col-2 btn"><img src="../Acsset/brand/bolon.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+    $(".regular").slick({
+        infinite: true,
+        slidesToShow: 5,
+    });
+</script>
+</body>
+</html>
