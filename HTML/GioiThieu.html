@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sản phẩm</title>
+    <title>Giới thiệu</title>
     <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick-theme.css">
-    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../bootstrap-5.3.2-dist/jquery-3.7.1.min.js"></script>
-    <script src="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.js"></script>
     <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            margin-top: 50px;
+        }
         #header{
             background-color: #FFCD00;
         }
         #logo{
             width: 150px;
-        }
-        #search{
-            width: 500px;
         }
         .dangnhap{
             text-decoration: none;
@@ -58,16 +60,26 @@
             color: #FFFFFF; 
             text-decoration: none;
         }
-        .img-fluid {
-            width: 440px;
-            height: 440px;
+        .container {
+            margin-top: 130px;
         }
-        .name-product{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #011e60;
+        .btn {
+            margin-left: 40px;
         }
-        .btn.btn-group {
-            border: 1px solid rgb(212, 211, 211);
+        .col-2 {
+            width: 190px;
+            height: 190px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-2:hover {
+            border: 2px solid rgb(20, 20, 82);
+        }
+        .col-2 img {
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
@@ -102,66 +114,48 @@
         </div>
     </nav>
 </div>
+<main>
 
-<main class="" style="margin-top: 130px;">
     <div class="container">
-        <div class="product-content-wrap">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-6 product-detail-left">
-                    <img class="img-fluid" src="../Acsset/IMG_DETAIL/san-pham-1.webp" alt="">
-                    <img src="../Acsset/IMG_DETAIL/thong_so.webp" alt="">
-                    <div class="row" style="text-align: center;">
-                        <div class="col-3">56</div>
-                        <div class="col-3">18</div>
-                        <div class="col-2">145</div>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="row product-detail-right bg-body-tertiary">
-                        <h5 class="name-product mt-3">Gọng Kính Nam EMPORIO ARMANI 0EA3232D 501756</h5>
-                        <div class="row">
-                            <div class="col-4">
-                                <p>Tình trạng: Còn hàng</p>
-                            </div>
-                            <div class="col-4">
-                                <p>Xuất xứ: Trung Quốc</p>
-                            </div>
-                        </div>
-                        <hr>
-                        <h6>Giá: <span style="margin-left: 10px; color: red; font-size: 20px;">3.980.000₫</span></h6>
-                        <h6 class="mt-4">Màu sắc: </h6>
-                        <div class="mt-3">
-                            <button class="btn btn-group me-3" onclick="changeBorderColor(this)">Shiny Black</button>
-                            <button class="btn btn-group" onclick="changeBorderColor(this)">Shiny Olive Green</button>
-                        </div>
-                        <h6 class="mt-4">Kích thước: </h6>
-                        <div class="mt-3">
-                            <button class="btn btn-group me-3" onclick="changeBorderColor(this)">56-18-145</button>
-                            <!-- <button class="btn btn-group mr-2" onclick="changeBorderColor(this)">Shiny Olive Green</button> -->
-                        </div>
-                        <h6 class="mt-4">Số lượng: </h6>
-                        <div class="mt-3">
-                            <button class="btn btn-group me-3" onclick="decrementQuantity()">-</button>
-                            <span id="quantity">1</span>
-                            <button class="btn btn-group ms-3" onclick="incrementQuantity()">+</button>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col">
-                                <button class="btn btn-danger" style="width: 100%; height: 50px;">MUA NGAY</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><img src="../Acsset/IMG_DETAIL/bottom-detail.png" alt="" style="width: 100%;"></div>
-                    </div>
-                </div>
+        <div class="row">
+            <img id="banner" src="../Acsset/carousel/banner.jpg" alt="">
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <div class="icon"><i class="bi bi-shop"></i></div>
+                <h4>Chất lượng sản phẩm</h4>
+                <p>Chúng tôi cung cấp các sản phẩm mắt kính chất lượng cao từ các thương hiệu uy tín trên thị trường.</p>
             </div>
-            
+            <div class="col-md-4 mt-5">
+                <div class="icon"><i class="bi bi-truck"></i></div>
+                <h4>Giao hàng nhanh chóng</h4>
+                <p>Đội ngũ giao hàng của chúng tôi cam kết giao hàng đúng hẹn và nhanh chóng đến tay khách hàng.</p>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="icon"><i class="bi bi-heart"></i></div>
+                <h4>Dịch vụ chăm sóc khách hàng</h4>
+                <p>Chúng tôi luôn lắng nghe và đáp ứng mọi nhu cầu của khách hàng để đảm bảo sự hài lòng cao nhất.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="icon"><i class="bi bi-shop"></i></div>
+                <h4>Bí quyết chọn tròng kính phù hợp</h4>
+                <p>EYE-YT cung cấp tròng kính cao cấp từ Essilor, Rodenstock, A-MO, Element,...</p>
+            </div>
+            <div class="col-md-4">
+                <div class="icon"><i class="bi bi-truck"></i></div>
+                <h4>Đo mắt và tư vấn thị lực miễn phí</h4>
+                <p>Trải nghiệm đo mắt tại EYE-YT với tiêu chuẩn 12 bước từ Châu Âu hoàn toàn miễn phí.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="icon"><i class="bi bi-heart"></i></div>
+                <h4>Trắc nghiệm chọn gọng kính phù hợp với khuôn mặt</h4>
+                <p>Chưa biết nên chọn gọng kính như thế nào? Cùng EYE-YT thực hiện trắc nghiệm để tìm ra gọng kính phù hợp ngay!</p>
+            </div>
         </div>
     </div>
 </main>
-
 <footer>
     <div class="container-fluid text-light">
         <div class="row">
@@ -192,32 +186,5 @@
         <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
     </div>
 </footer>
-<script>
-    function changeBorderColor(button) {
-        // Lấy tất cả các button trong cùng một div chứa button
-        var buttons = button.parentElement.getElementsByTagName('button');
-        // Đặt lại màu viền của tất cả các button về màu ban đầu
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.borderColor = '';
-        }
-        // Đặt màu viền của button được chọn thành màu khác
-        button.style.borderColor = '#011e60';
-    }
-</script>
-<script>
-    var quantity = 1; // Số lượng ban đầu
-
-    function incrementQuantity() {
-        quantity++;
-        document.getElementById('quantity').innerText = quantity;
-    }
-
-    function decrementQuantity() {
-        if (quantity > 1) {
-            quantity--;
-            document.getElementById('quantity').innerText = quantity;
-        }
-    }
-</script>
 </body>
 </html>
