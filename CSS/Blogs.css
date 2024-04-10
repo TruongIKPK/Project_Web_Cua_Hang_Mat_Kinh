@@ -1,0 +1,59 @@
+section{
+    background-color: #F9F86C;
+}
+.blog{
+    padding-left: 10px;
+}
+.blog a{
+    text-decoration: none;
+}
+.blog p{        
+   font-size: 14px;
+   margin: 0;
+   margin-top: 10px;
+}
+.blog h5{
+    margin: 0;
+   font-size: 18px;
+   color: #011E60;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box {
+    position: relative;
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+}
+.box:hover{
+    border: 1px rgb(144, 142, 142) solid;
+}
+.box a{
+    text-decoration: none;
+    color: #011E60;
+}
+.box h6{
+    margin: 0; 
+    padding: 0;
+}
+.box .chitiet{
+    margin-top: 15px; 
+    font-size: 10px;
+}
+.img-thumbnail .img-into{
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .box {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: calc(50% - 20px);
+    }
+}

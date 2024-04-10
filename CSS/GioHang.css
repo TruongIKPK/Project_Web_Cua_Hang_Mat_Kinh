@@ -1,0 +1,83 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+section{
+    width: 69%;
+    float: left;
+}
+table .hinhanh img{
+    width: 100px;
+}
+table td{
+    vertical-align: middle;
+}
+table ul{
+    padding: 0;
+}
+table ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+table .tenSp{
+    font-weight: 500;
+    font-size: 16px;
+}
+table input{
+    width: 20px;
+    border: none;
+}
+table input[type="text"]{
+    text-align: center;
+}
+table button{
+    border: none;
+    font-size: 18px;
+}
+table td a{
+    text-decoration: none;
+    color: #011e60;
+}
+table .soLuong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 90px;
+}
+aside{
+    margin-left: 2%;
+    width: 29%;
+    float: left;
+    font-family: "Montserrat", sans-serif;;
+}  
+aside input{
+    width: 100%;
+    height: 40px;
+}
+aside button{
+    padding: 0;
+}
+aside .magiamgia{
+    text-align: center;
+}
+aside .close-magiam{
+    width: 18px;
+    cursor: pointer;
+}
+aside #tiengiam{
+    text-align: left;
+}
+aside #TongCong{
+    color: red;
+    text-align: right;
+}
+aside .thanhToan{
+    display: flex;
+}
+aside #ThanhToan{
+    background-color: red;
+    color: white;
+    height: 50px;
+}

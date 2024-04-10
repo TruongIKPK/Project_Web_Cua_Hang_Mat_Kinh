@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tin Tức</title>
+    <link rel="icon" href="../Acsset/LOGO/Logo.png">
     <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,110 +14,8 @@
     <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../bootstrap-5.3.2-dist/jquery-3.7.1.min.js"></script>
     <script src="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.js"></script>
-    <style>
-        #header{
-            background-color: #FFCD00;
-        }
-        #logo{
-            width: 150px;
-        }
-        #search{
-            width: 500px;
-        }
-        .dangnhap{
-            text-decoration: none;
-            color: black;
-        }
-        .slick-prev:before,
-        .slick-next:before {
-            color: black;
-        }
-        @media (max-width: 768px) {
-            .show-on-mobile {
-                display: inline-block;
-            }
-            .hide-on-mobile {
-                display: none;
-            }
-        }
-        footer{
-            background-color: #011e60;
-            font-family: "Montserrat", sans-serif;
-        }
-        #copyright{
-            background-color: #FFFFFF;
-            color: #011e60;
-            font-weight: bold;
-        }
-        #lien_he{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        #lien_he li a{
-            width: 40px;
-            height: 40px;
-            background: #FFFFFF;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #lien_he li a img{
-            width: 22px;
-            height: 22px;
-        }
-        #sitemap a{
-            color: #FFFFFF; 
-            text-decoration: none;
-        }
-        section{
-            background-color: #F9F86C;
-        }
-        .blog{
-            padding-left: 10px;
-        }
-        .blog p{        
-           font-size: 14px;
-           margin: 0;
-           margin-top: 10px;
-        }
-        .blog h5{
-            margin: 0;
-           font-size: 18px;
-           color: #011E60;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .box {
-            position: relative;
-            width: calc(25% - 20px);
-            margin: 10px;
-            padding: 10px;
-        }
-        .box:hover{
-            border: 1px rgb(144, 142, 142) solid;
-        }
-        .box a{
-            text-decoration: none;
-            color: #011E60;
-        }
-
-        @media screen and (max-width: 768px) {
-            .box {
-                width: calc(33.33% - 20px);
-            }
-        }
-        
-        @media screen and (max-width: 480px) {
-            .box {
-                width: calc(50% - 20px);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS/TongThe_style.css"> 
+    <link rel="stylesheet" href="../CSS/Blogs.css">
 </head>
 <body>
     <div class="fixed-top">
@@ -130,9 +29,9 @@
                     <input type="text" class="form-control me-2 hide-on-mobile" placeholder="Tìm gọng kính, kính mát, tròng kính..." id="search">
                     <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
                 </form>
-                <a href="../HTML/HeThongCuaHang.html" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống 27 cửa hàng EYE Y-T</span> </a>
-                <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"> Đăng ký</a></div>
-                <a href="#" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
+                <a href="../HTML/HeThongCuaHang.html" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống cửa hàng EYE Y-T</span> </a>
+                <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"  id="dangKy"> Đăng ký</a></div>
+                <a href="../HTML/GioHang.html" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
             </div>
         </nav>
         <nav class="navbar navbar-expand-md bg-light">
@@ -140,9 +39,9 @@
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto ms-5">
                         <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Gọng kính</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Kính mát</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Kính áp tròng</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Thương hiệu</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính mát</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính áp tròng</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Thương hiệu</a></li>
                         <li class="nav-item"><a href="../HTML/TrangBlog.html" class="nav-link">Blogs</a></li>
                     </ul>
                 </div>
@@ -152,117 +51,126 @@
 <main class="" style="margin-top: 130px;">
     <section class="container autoplay slider rounded-5">
         <div class="m-5 blog rounded-5">
+            <a href="#">
             <img src="../Acsset/CAROUSEL/baiviet1.png" alt="" class="img-blog rounded-5 w-100">
             <p class="text-secondary">Bí quyết chăm sóc mắt | 21 Tháng 03, 2024</p>
             <h5>Người bị cận về già có hết không?</h5>
+            </a>
         </div>
         <div class="m-5 blog rounded-5">
+            <a href="#">
             <img src="../Acsset/CAROUSEL/baiviet2.png" alt="" class="img-blog rounded-5 w-100">
             <p class="text-secondary">Bí quyết chăm sóc mắt | 21 Tháng 03, 2024</p>
-            <h5>Người bị cận về già có hết không?</h5>
+            <h5>Giảm cận thị không còn phải đeo kính nhờ 9 cách này</h5>
+            </a>
         </div>
         <div class="m-5 blog rounded-5">
+            <a href="#">
             <img src="../Acsset/CAROUSEL/baiviet3.png" alt="" class="img-blog rounded-5 w-100">
             <p class="text-secondary">Bí quyết chăm sóc mắt | 21 Tháng 03, 2024</p>
-            <h5>Người bị cận về già có hết không?</h5>
+            <h5>Cách chữa bệnh khô mắt</h5>
+            </a>
         </div>
         <div class="m-5 blog rounded-5">
+            <a href="#">
             <img src="../Acsset/CAROUSEL/baiviet4.png" alt="" class="img-blog rounded-5 w-100">
             <p class="text-secondary">Bí quyết chăm sóc mắt | 21 Tháng 03, 2024</p>
-            <h5>Người bị cận về già có hết không?</h5>
+            <h5>Cận 5 độ có đeo kính áp tròng thay kính cận được không?</h5>
+            </a>
         </div>
         <div class=" m-5 blog rounded-5">
+            <a href="#">
             <img src="../Acsset/CAROUSEL/baiviet5.png" alt="" class="img-blog rounded-5 w-100">
             <p class="text-secondary">Bí quyết chăm sóc mắt | 21 Tháng 03, 2024</p>
-            <h5>Người bị cận về già có hết không?</h5>
+            <h5>Tuổi tác ảnh hưởng thế nào tới thị lực của bạn?</h5>
+            </a>
         </div>
         <div class="m-5 blog rounded-5">
+            <a href="#">
             <img src="../Acsset/CAROUSEL/baiviet6.png" alt="" class="img-blog rounded-5 w-100">
             <p class="text-secondary">Bí quyết chăm sóc mắt | 21 Tháng 03, 2024</p>
-            <h5>Người bị cận về già có hết không?</h5>
+            <h5>Vệ sinh mắt kính bị mốc xanh hiệu quả</h5>
+            </a>
         </div>
       </section>
-
-      
     <div class="container"> 
         <div class="box img-thumbnail">
-            <a href="">
+            <a href="#">
                 <div class="sp-into">
                     <div class="img">
-                        <img src="../Acsset/CAROUSEL/baiviet1.png" alt="" style="width: 100%;" class="img-into">
+                        <img src="../Acsset/CAROUSEL/baiviet1.png" alt=""class="img-into">
                     </div>
                     <div class="into">
-                        <h6 style="margin: 0; padding: 0;">KÍNH ĐA TRÒNG GIÁ BAO NHIÊU? HƯỚNG DẪN CHỌN KÍNH ĐA TRÒNG PHÙ HỢP</h6>
+                        <h6>KÍNH ĐA TRÒNG GIÁ BAO NHIÊU? HƯỚNG DẪN CHỌN KÍNH ĐA TRÒNG PHÙ HỢP</h6>
                         <span class="text-secondary">Tin tức | 04 Tháng 03, 202</span>
-                        <h6 style="margin: 0; padding: 0; margin-top: 15px; font-size: 10px;">Trong thời đại công nghệ thông tin phát triển, việc sử dụng kính đa tròng trở nên phổ biến hơn bao giờ hết. Kính đa tròng không chỉ hỗ trợ người dùng trong việc cải thiện thị lực mà còn giúp họ thoải mái hơn khi làm việc với các...</h6>
+                        <h6 class="chitiet">Trong thời đại công nghệ thông tin phát triển, việc sử dụng kính đa tròng trở nên phổ biến hơn bao giờ hết. Kính đa tròng không chỉ hỗ trợ người dùng trong việc cải thiện thị lực mà còn giúp họ thoải mái hơn khi làm việc với các...</h6>
                     </div>
                 </div>
             </a>
         </div>
         <div class="box img-thumbnail">
-            <a href="">
+            <a href="#">
                 <div class="sp-into">
                     <div class="img">
-                        <img src="../Acsset/CAROUSEL/baiviet1.png" alt="" style="width: 100%;" class="img-into">
+                        <img src="../Acsset/CAROUSEL/baiviet2.png" alt="" class="img-into">
                     </div>
                     <div class="into">
-                        <h6 style="margin: 0; padding: 0;">KÍNH ĐA TRÒNG GIÁ BAO NHIÊU? HƯỚNG DẪN CHỌN KÍNH ĐA TRÒNG PHÙ HỢP</h6>
+                        <h6>KÍNH ĐA TRÒNG GIÁ BAO NHIÊU? HƯỚNG DẪN CHỌN KÍNH ĐA TRÒNG PHÙ HỢP</h6>
                         <span class="text-secondary">Tin tức | 04 Tháng 03, 202</span>
-                        <h6 style="margin: 0; padding: 0; margin-top: 15px; font-size: 10px;">Trong thời đại công nghệ thông tin phát triển, việc sử dụng kính đa tròng trở nên phổ biến hơn bao giờ hết. Kính đa tròng không chỉ hỗ trợ người dùng trong việc cải thiện thị lực mà còn giúp họ thoải mái hơn khi làm việc với các...</h6>
+                        <h6 class="chitiet">Trong thời đại công nghệ thông tin phát triển, việc sử dụng kính đa tròng trở nên phổ biến hơn bao giờ hết. Kính đa tròng không chỉ hỗ trợ người dùng trong việc cải thiện thị lực mà còn giúp họ thoải mái hơn khi làm việc với các...</h6>
                     </div>
                 </div>
             </a>
         </div>
         <div class="box img-thumbnail">
-            <a href="">
+            <a href="#">
                 <div class="sp-into">
                     <div class="img">
-                        <img src="../Acsset/CAROUSEL/baiviet1.png" alt="" style="width: 100%;" class="img-into">
+                        <img src="../Acsset/CAROUSEL/baiviet3.png" alt=""class="img-into">
                     </div>
                     <div class="into">
-                        <h6 style="margin: 0; padding: 0;">KÍNH ĐA TRÒNG GIÁ BAO NHIÊU? HƯỚNG DẪN CHỌN KÍNH ĐA TRÒNG PHÙ HỢP</h6>
+                        <h6>KÍNH ĐA TRÒNG GIÁ BAO NHIÊU? HƯỚNG DẪN CHỌN KÍNH ĐA TRÒNG PHÙ HỢP</h6>
                         <span class="text-secondary">Tin tức | 04 Tháng 03, 202</span>
-                        <h6 style="margin: 0; padding: 0; margin-top: 15px; font-size: 10px;">Trong thời đại công nghệ thông tin phát triển, việc sử dụng kính đa tròng trở nên phổ biến hơn bao giờ hết. Kính đa tròng không chỉ hỗ trợ người dùng trong việc cải thiện thị lực mà còn giúp họ thoải mái hơn khi làm việc với các...</h6>
+                        <h6 class="chitiet">Trong thời đại công nghệ thông tin phát triển, việc sử dụng kính đa tròng trở nên phổ biến hơn bao giờ hết. Kính đa tròng không chỉ hỗ trợ người dùng trong việc cải thiện thị lực mà còn giúp họ thoải mái hơn khi làm việc với các...</h6>
                     </div>
                 </div>
             </a>
         </div>
 
         <div class="box img-thumbnail">
-            <a href="">
+            <a href="#">
                 <div class="sp-into">
                     <div class="img">
-                        <img src="../Acsset/CAROUSEL/baiviet1.png" alt="" style="width: 100%;" class="img-into">
+                        <img src="../Acsset/CAROUSEL/baiviet4.png" alt="" class="img-into">
                     </div>
                     <div class="into">
-                        <h6 style="margin: 0; padding: 0;">KÍNH ĐA TRÒNG GIÁ BAO NHIÊU? HƯỚNG DẪN CHỌN KÍNH ĐA TRÒNG PHÙ HỢP</h6>
+                        <h6>KÍNH ĐA TRÒNG GIÁ BAO NHIÊU? HƯỚNG DẪN CHỌN KÍNH ĐA TRÒNG PHÙ HỢP</h6>
                         <span class="text-secondary">Tin tức | 04 Tháng 03, 202</span>
-                        <h6 style="margin: 0; padding: 0; margin-top: 15px; font-size: 10px;">Trong thời đại công nghệ thông tin phát triển, việc sử dụng kính đa tròng trở nên phổ biến hơn bao giờ hết. Kính đa tròng không chỉ hỗ trợ người dùng trong việc cải thiện thị lực mà còn giúp họ thoải mái hơn khi làm việc với các...</h6>
+                        <h6 class="chitiet">Trong thời đại công nghệ thông tin phát triển, việc sử dụng kính đa tròng trở nên phổ biến hơn bao giờ hết. Kính đa tròng không chỉ hỗ trợ người dùng trong việc cải thiện thị lực mà còn giúp họ thoải mái hơn khi làm việc với các...</h6>
                     </div>
                 </div>
             </a>
         </div>
     </div>
 </main>
-
-<footer class="pt-5">
+<footer>
     <div class="container-fluid text-light">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 mt-3">
                 <h5>THÔNG TIN LIÊN HỆ</h5>
                 <p>Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</p>
                 <p>Số điện thoại: 0377200300</p>
                 <p>Email: yandteyes@gmail.com</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mt-3">
                 <h5>THEO DÕI CHÚNG TÔI</h5>
                 <ul id="lien_he" class="list-unstyled">
-                    <li><a href="#"><img src="../Acsset/ICON/logo-facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../Acsset/ICON/logo-instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../Acsset/ICON/icon_tiktok.svg" alt="Tiktok"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/icon_tiktok.svg" alt="Tiktok"></a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <ul id="sitemap" class="list-unstyled">
                     <li class="mt-3"><a href="sitemap.html">Sitemap</a></li>
                     <li class="mt-3"><a href="">Giới thiệu thành viên thực hiện</a></li>
@@ -271,17 +179,10 @@
             </div>
         </div>
     </div>
-    <div id="copyright" class="container-fluid text-center">
-        <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
-    </div>
 </footer>
-<script>
-    $('.autoplay').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
-</script>
+<div id="copyright" class="container-fluid text-center py-2">
+    <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
+</div>
+<script src="../JS/Blogs.js"> </script>
 </body>
 </html>

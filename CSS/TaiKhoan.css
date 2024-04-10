@@ -9,6 +9,13 @@ main{
     margin: auto;
     padding-bottom: 70px;
 }
+#chinhsach{
+    font-size: 18px; 
+    color: orange;
+}
+#form #pc{
+    padding-top: 5px;
+}
 #form ul{
     justify-content: center;
 }
@@ -25,10 +32,6 @@ ul>li button{
 .nav-tabs{
     border: none;
 }
-.tab-content .tab-pane #note{
-    font-weight: 10;
-    color: rgb(137, 137, 135);
-}
 #login #login1{
     background-color: orange; 
     width: 100%;
@@ -36,6 +39,10 @@ ul>li button{
 }
 a{
     text-decoration: none;
+}
+#logup{
+    background-color: orange; 
+    width: 100%;
 }
 #login #qmk{
     font-size: 15px;

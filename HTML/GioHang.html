@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="icon" href="../Acsset/LOGO/Logo.png">
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.2-dist/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../CSS/TongThe_style.css">
+    <link rel="stylesheet" href="../CSS/GioHang.css">
+</head>
+<body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-md" id="header">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="../HTML/TrangChu.html" class="navbar-brand"><img src="../Acsset/LOGO/Logo.png" alt="logo" id="logo"></a>
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control me-2 hide-on-mobile" placeholder="Tìm gọng kính, kính mát, tròng kính..." id="search">
+                    <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
+                </form>
+                <a href="../HTML/HeThongCuaHang.html" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống cửa hàng EYE Y-T</span> </a>
+                <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"  id="dangKy"> Đăng ký</a></div>
+                <a href="../HTML/GioHang.html" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid ">
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto ms-5">
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Gọng kính</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính mát</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính áp tròng</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Thương hiệu</a></li>
+                        <li class="nav-item"><a href="../HTML/TrangBlog.html" class="nav-link">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<main class="container" style="margin-top: 130px;">
+    <div class="row">
+        <div class="col-5"><h5>GIỎ HÀNG CỦA BẠN</h5></div>
+        <div class="col-7"><p>Bạn đang có <span>1</span> sản phẩm trong giỏ hàng</p></div>
+    </div>
+    <section>
+        <table class="table">
+            <thead>
+                <th>Sản phẩm</th>
+                <th></th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng cộng</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hinhanh"><a href="../HTML/ChiTietSanPham.html"><img src="../Acsset/IMG_SANPHAM/KinhApTrong/1.jpg" alt=""></a></td>
+                    <td>
+                        <ul>
+                            <li class="tenSp"><a href="../HTML/ChiTietSanPham.html">Gọng Kính Nam EMPORIO ARMANI 0EA1154D 300154</a></li>
+                            <li>Màu sắc: Matte Black</li>
+                            <li>Kích thước: 54-19-145</li>
+                            <li>Style Name: 0EA1154D</li>
+                        </ul>
+                    </td>
+                    <td>4,280,000₫</td>
+                    <td>
+                        <div class="soLuong">
+                            <button>-</button>
+                            <input type="text" value="4" readonly>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>17,120,000₫</td>
+                </tr>
+                <td class="hinhanh"><a href="../HTML/ChiTietSanPham.html"><img src="../Acsset/IMG_SANPHAM/KinhApTrong/1.jpg" alt=""></a></td>
+                    <td>
+                        <ul>
+                            <li class="tenSp"><a href="../HTML/ChiTietSanPham.html">Gọng Kính Nam EMPORIO ARMANI 0EA1154D 300154</a></li>
+                            <li>Màu sắc: Matte Black</li>
+                            <li>Kích thước: 54-19-145</li>
+                            <li>Style Name: 0EA1154D</li>
+                        </ul>
+                    </td>
+                    <td>4,280,000₫</td>
+                    <td>
+                        <div class="soLuong">
+                            <button>-</button>
+                            <input type="text" value="4" readonly>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>17,120,000₫</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <aside>
+        <h5>TẠM TÍNH:</h5>
+        <form action="">
+            <div class="row magiamgia">
+                <div class="col-4 mt-3" id="tiengiam"><h6>Giảm Giá:</h6></div>
+                <div class="col-4 mt-3">WELCOME200</div>
+                <div class="col-3 mt-3">-200,000₫</div>
+                <div class="col-1 mt-3"> <img class="close-magiam" src="../Acsset/ICON/close-circle-outline.svg" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col mt-3"><h6>Mã giảm giá:</h6></div>
+            </div>
+            <div class="row">
+                <div class="col-8 mt-3"><input type="text" class="" placeholder="Nhập mã khuyến mãi"></div>
+                <div class="col-4 mt-3"><button class="btn btn-primary">Sử Dụng</button></div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3 thanhToan">
+                    <div class="col-6"><h4>TỔNG CỘNG</h4></div>
+                    <div class="col-6"><h3 id="TongCong">17,199,000₫</h3></div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-3 mb-3"><button class="btn w-100" id="ThanhToan">Tiến Hành Thanh Toán</button></div>
+            </div>
+        </form>
+    </aside>
+</main>
+
+<footer>
+    <div class="container-fluid text-light">
+        <div class="row">
+            <div class="col-md-5 mt-3">
+                <h5>THÔNG TIN LIÊN HỆ</h5>
+                <p>Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</p>
+                <p>Số điện thoại: 0377200300</p>
+                <p>Email: yandteyes@gmail.com</p>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h5>THEO DÕI CHÚNG TÔI</h5>
+                <ul id="lien_he" class="list-unstyled">
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/icon_tiktok.svg" alt="Tiktok"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul id="sitemap" class="list-unstyled">
+                    <li class="mt-3"><a href="sitemap.html">Sitemap</a></li>
+                    <li class="mt-3"><a href="">Giới thiệu thành viên thực hiện</a></li>
+                    <li class="mt-3"><a href="">Giới thiệu về website</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="copyright" class="container-fluid text-center py-2">
+    <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
+</div>
+</body>
+</html>

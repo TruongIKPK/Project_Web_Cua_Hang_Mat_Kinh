@@ -1,0 +1,11 @@
+.img-fluid {
+    width: 440px;
+    height: 440px;
+}
+.name-product{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #011e60;
+}
+.btn.btn-group {
+    border: 1px solid rgb(212, 211, 211);
+}

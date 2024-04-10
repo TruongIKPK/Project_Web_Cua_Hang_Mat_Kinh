@@ -1,0 +1,19 @@
+section{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+h2{
+    margin-left: 30px;
+    color: #011E60;
+}
+ul>li{
+    list-style: none;
+    color: #011E60;
+}
+#store{
+    font-size: 20px;
+    font-weight: 500;
+}
+aside{
+    padding-top: 30px;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi tiết sản phẩm</title>
+    <link rel="icon" href="../Acsset/LOGO/Logo.png">
     <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,95 +14,40 @@
     <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../bootstrap-5.3.2-dist/jquery-3.7.1.min.js"></script>
     <script src="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.js"></script>
-    <style>
-        #header{
-            background-color: #FFCD00;
-        }
-        #logo{
-            width: 150px;
-        }
-        #search{
-            width: 500px;
-        }
-        .dangnhap{
-            text-decoration: none;
-            color: black;
-        }
-        footer{
-            background-color: #011e60;
-            font-family: "Montserrat", sans-serif;
-        }
-        #copyright{
-            background-color: #FFFFFF;
-            color: #011e60;
-            font-weight: bold;
-        }
-        #lien_he{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        #lien_he li a{
-            width: 40px;
-            height: 40px;
-            background: #FFFFFF;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #lien_he li a img{
-            width: 22px;
-            height: 22px;
-        }
-        #sitemap a{
-            color: #FFFFFF; 
-            text-decoration: none;
-        }
-        .img-fluid {
-            width: 440px;
-            height: 440px;
-        }
-        .name-product{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #011e60;
-        }
-        .btn.btn-group {
-            border: 1px solid rgb(212, 211, 211);
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS/TongThe_style.css">
+    <link rel="stylesheet" href="../CSS/ChiTietSanPham.css">
 </head>
 <body>
-<div class="fixed-top">
-    <nav class="navbar navbar-expand-md" id="header">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="#" class="navbar-brand"><img src="../Acsset/LOGO/Logo.png" alt="logo" id="logo"></a>
-            <form action="" class="d-flex">
-                <input type="text" class="form-control me-2 hide-on-mobile" placeholder="Tìm gọng kính, kính mát, tròng kính..." id="search">
-                <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
-            </form>
-            <a href="#" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống 27 cửa hàng EYE Y-T</span> </a>
-            <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="#" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="#" class="hide-on-mobile dangnhap"> Đăng ký</a></div>
-            <a href="#" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-md bg-light">
-        <div class="container-fluid ">
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto ms-5">
-                    <li class="nav-item"><a href="#" class="nav-link">Gọng kính</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Kính mát</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Kính áp tròng</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Thương hiệu</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
-                </ul>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-md" id="header">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="../HTML/TrangChu.html" class="navbar-brand"><img src="../Acsset/LOGO/Logo.png" alt="logo" id="logo"></a>
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control me-2 hide-on-mobile" placeholder="Tìm gọng kính, kính mát, tròng kính..." id="search">
+                    <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
+                </form>
+                <a href="../HTML/HeThongCuaHang.html" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống cửa hàng EYE Y-T</span> </a>
+                <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"  id="dangKy"> Đăng ký</a></div>
+                <a href="../HTML/GioHang.html" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
             </div>
-        </div>
-    </nav>
-</div>
+        </nav>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid ">
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto ms-5">
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Gọng kính</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính mát</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính áp tròng</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Thương hiệu</a></li>
+                        <li class="nav-item"><a href="../HTML/TrangBlog.html" class="nav-link">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 
 <main class="" style="margin-top: 130px;">
     <div class="container">
@@ -171,15 +117,15 @@
                 <p>Số điện thoại: 0377200300</p>
                 <p>Email: yandteyes@gmail.com</p>
             </div>
-            <div class="col-md-4 mt-3"> 
+            <div class="col-md-4 mt-3">
                 <h5>THEO DÕI CHÚNG TÔI</h5>
                 <ul id="lien_he" class="list-unstyled">
-                    <li><a href="#"><img src="../Acsset/ICON/logo-facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../Acsset/ICON/logo-instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../Acsset/ICON/icon_tiktok.svg" alt="Tiktok"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/icon_tiktok.svg" alt="Tiktok"></a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <ul id="sitemap" class="list-unstyled">
                     <li class="mt-3"><a href="sitemap.html">Sitemap</a></li>
                     <li class="mt-3"><a href="">Giới thiệu thành viên thực hiện</a></li>
@@ -188,36 +134,10 @@
             </div>
         </div>
     </div>
-    <div id="copyright" class="container-fluid text-center py-2">
-        <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
-    </div>
 </footer>
-<script>
-    function changeBorderColor(button) {
-        // Lấy tất cả các button trong cùng một div chứa button
-        var buttons = button.parentElement.getElementsByTagName('button');
-        // Đặt lại màu viền của tất cả các button về màu ban đầu
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.borderColor = '';
-        }
-        // Đặt màu viền của button được chọn thành màu khác
-        button.style.borderColor = '#011e60';
-    }
-</script>
-<script>
-    var quantity = 1; // Số lượng ban đầu
-
-    function incrementQuantity() {
-        quantity++;
-        document.getElementById('quantity').innerText = quantity;
-    }
-
-    function decrementQuantity() {
-        if (quantity > 1) {
-            quantity--;
-            document.getElementById('quantity').innerText = quantity;
-        }
-    }
-</script>
+<div id="copyright" class="container-fluid text-center py-2">
+    <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
+</div>
+<script src="../JS/ChiTietSanPham.js"></script>
 </body>
 </html>

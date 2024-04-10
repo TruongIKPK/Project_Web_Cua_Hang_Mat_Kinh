@@ -4,179 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh sách sản phẩm</title>
+    <link rel="icon" href="../Acsset/LOGO/Logo.png">
     <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick-theme.css">
     <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../bootstrap-5.3.2-dist/jquery-3.7.1.min.js"></script>
-    <script src="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.js"></script>
-    <style>
-        #header{
-            background-color: #FFCD00;
-        }
-        #logo{
-            width: 150px;
-        }
-        #search{
-            width: 500px;
-        }
-        .dangnhap{
-            text-decoration: none;
-            color: black;
-        }
-        @media (max-width: 768px) {
-            .show-on-mobile {
-                display: inline-block;
-            }
-            .hide-on-mobile {
-                display: none;
-            }
-        }
-        footer{
-            background-color: #011e60;
-            font-family: "Montserrat", sans-serif;
-        }
-        #copyright{
-            background-color: #FFFFFF;
-            color: #011e60;
-            font-weight: bold;
-        }
-        #lien_he{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        #lien_he li a{
-            width: 40px;
-            height: 40px;
-            background: #FFFFFF;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #lien_he li a img{
-            width: 22px;
-            height: 22px;
-        }
-        #sitemap a{
-            color: #FFFFFF; 
-            text-decoration: none;
-        }
-
-
-        header{
-            width: 100%;
-            height: 350px;
-            background-image: url(../Acsset/CAROUSEL/collection_banner.png);
-            background-size: cover;
-        }
-        #brand-product{
-            font-weight: 600;
-            margin-top: 5px;
-            width: 100%;
-            font-size: 20px;
-            color: #011E60;
-            
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .box {
-            position: relative;
-            width: calc(25% - 20px);
-            margin: 10px;
-            padding: 10px;
-        }
-        .box:hover{
-            border: 1px rgb(144, 142, 142) solid;
-        }
-        .box a{
-            text-decoration: none;
-            color: #011E60;
-        }
-        .hethang{
-            position: absolute;
-            top: 10px;
-            left: 5px;
-            width: 75px;
-            height: 23px;
-            background-color: #FFCD00;
-            color: #011E60;
-            text-align: center;
-            border-radius: 2px;
-            font-size: 14px;
-        }
-    
-        @media screen and (max-width: 768px) {
-            .box {
-                width: calc(33.33% - 20px);
-            }
-        }
-        
-        @media screen and (max-width: 480px) {
-            .box {
-                width: calc(50% - 20px);
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="../CSS/TongThe_style.css">
+    <link rel="stylesheet" href="../CSS/DSSanPham.css">
 </head>
 <body>
-<div class="fixed-top">
-    <nav class="navbar navbar-expand-md" id="header">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="../HTML/TrangChu.html" class="navbar-brand"><img src="../Acsset/LOGO/Logo.png" alt="logo" id="logo"></a>
-            <form action="" class="d-flex">
-                <input type="text" class="form-control me-2 hide-on-mobile" placeholder="Tìm gọng kính, kính mát, tròng kính..." id="search">
-                <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
-            </form>
-            <a href="../HTML/HeThongCuaHang.html" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống 27 cửa hàng EYE Y-T</span> </a>
-            <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"> Đăng ký</a></div>
-            <a href="#" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-md bg-light">
-        <div class="container-fluid ">
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto ms-5">
-                    <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Gọng kính</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Kính mát</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Kính áp tròng</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Thương hiệu</a></li>
-                    <li class="nav-item"><a href="../HTML/TrangBlog.html" class="nav-link">Blogs</a></li>
-                </ul>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-md" id="header">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="../HTML/TrangChu.html" class="navbar-brand"><img src="../Acsset/LOGO/Logo.png" alt="logo" id="logo"></a>
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control me-2 hide-on-mobile" placeholder="Tìm gọng kính, kính mát, tròng kính..." id="search">
+                    <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
+                </form>
+                <a href="../HTML/HeThongCuaHang.html" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống cửa hàng EYE Y-T</span> </a>
+                <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"  id="dangKy"> Đăng ký</a></div>
+                <a href="../HTML/GioHang.html" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
             </div>
-        </div>
-    </nav>
-</div>
-
-
+        </nav>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid ">
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto ms-5">
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Gọng kính</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính mát</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính áp tròng</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Thương hiệu</a></li>
+                        <li class="nav-item"><a href="../HTML/TrangBlog.html" class="nav-link">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 <main class="" style="margin-top: 130px;">
-   
     <div class="container">
         <header></header>
         <nav id="brand-product">
             BỘ SƯU TẬP THU ĐÔNG 2023 - THƯƠNG HIỆU BOLON
         </nav>
-        
         <div class="box img-thumbnail">
-            <a href="">
+            <a href="../HTML/ChiTietSanPham.html">
                 <div class="sp-into">
                     <div class="img">
-                        <img src="../Acsset/IMG_SANPHAM/KinhBoLon/Kính Mát Nữ BOLON BL7196 A63 3280.png" alt="" style="width: 100%;" class="img-into">
+                        <img src="../Acsset/IMG_SANPHAM/KinhBoLon/Kính Mát Nữ BOLON BL7196 A63 3280.png" alt=""  class="img-into">
                     </div>
                     <div class="into">
-                        <h6 style="margin: 0; padding: 0;">Kính Mát Nữ BOLON BL7196 A63</h6>
-                        <h6 style="margin: 0; padding: 0; margin-top: 15px;">3,280,000đ</h6>
+                        <h6>Kính Mát Nữ BOLON BL7196 A63</h6>
+                        <h6 class="tien">3,280,000đ</h6>
                     </div>
                 </div>
                 <div class="hethang active1">
@@ -185,15 +68,15 @@
             </a>
         </div>
 
-       <div class="box img-thumbnail">
-            <a href="">
+        <div class="box img-thumbnail">
+            <a href="../HTML/ChiTietSanPham.html">
                 <div class="sp-into">
                     <div class="img">
-                        <img src="../Acsset/IMG_SANPHAM/KinhBoLon/Kính Mát Nữ BOLON BL7196 A63 3280.png" alt="" style="width: 100%;" class="img-into">
+                        <img src="../Acsset/IMG_SANPHAM/KinhBoLon/Kính Mát Nữ BOLON BL7196 A63 3280.png" alt=""  class="img-into">
                     </div>
                     <div class="into">
-                        <h6 style="margin: 0; padding: 0;">Kính Mát Nữ BOLON BL7196 A63</h6>
-                        <h6 style="margin: 0; padding: 0; margin-top: 15px;">3,280,000đ</h6>
+                        <h6>Kính Mát Nữ BOLON BL7196 A63</h6>
+                        <h6 class="tien">3,280,000đ</h6>
                     </div>
                 </div>
                 <div class="hethang active1">
@@ -202,14 +85,14 @@
             </a>
         </div>
         <div class="box img-thumbnail">
-            <a href="">
+            <a href="../HTML/ChiTietSanPham.html">
                 <div class="sp-into">
                     <div class="img">
-                        <img src="../Acsset/IMG_SANPHAM/KinhBoLon/Kính Mát Nữ BOLON BL7196 A63 3280.png" alt="" style="width: 100%;" class="img-into">
+                        <img src="../Acsset/IMG_SANPHAM/KinhBoLon/Kính Mát Nữ BOLON BL7196 A63 3280.png" alt=""  class="img-into">
                     </div>
                     <div class="into">
-                        <h6 style="margin: 0; padding: 0;">Kính Mát Nữ BOLON BL7196 A63</h6>
-                        <h6 style="margin: 0; padding: 0; margin-top: 15px;">3,280,000đ</h6>
+                        <h6>Kính Mát Nữ BOLON BL7196 A63</h6>
+                        <h6 class="tien">3,280,000đ</h6>
                     </div>
                 </div>
                 <div class="hethang active1">
@@ -218,14 +101,14 @@
             </a>
         </div>
         <div class="box img-thumbnail">
-            <a href="">
+            <a href="../HTML/ChiTietSanPham.html">
                 <div class="sp-into">
                     <div class="img">
-                        <img src="../Acsset/IMG_SANPHAM/KinhBoLon/Kính Mát Nữ BOLON BL7196 A63 3280.png" alt="" style="width: 100%;" class="img-into">
+                        <img src="../Acsset/IMG_SANPHAM/KinhBoLon/Kính Mát Nữ BOLON BL7196 A63 3280.png" alt=""  class="img-into">
                     </div>
                     <div class="into">
-                        <h6 style="margin: 0; padding: 0;">Kính Mát Nữ BOLON BL7196 A63</h6>
-                        <h6 style="margin: 0; padding: 0; margin-top: 15px;">3,280,000đ</h6>
+                        <h6>Kính Mát Nữ BOLON BL7196 A63</h6>
+                        <h6 class="tien">3,280,000đ</h6>
                     </div>
                 </div>
                 <div class="hethang active1">
@@ -233,11 +116,8 @@
                 </div>
             </a>
         </div>
-        
     </div>
-
 </main>
-
 <footer>
     <div class="container-fluid text-light">
         <div class="row">
@@ -250,12 +130,12 @@
             <div class="col-md-4 mt-3">
                 <h5>THEO DÕI CHÚNG TÔI</h5>
                 <ul id="lien_he" class="list-unstyled">
-                    <li><a href="#"><img src="../Acsset/ICON/logo-facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../Acsset/ICON/logo-instagram.svg" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../Acsset/ICON/icon_tiktok.svg" alt="Tiktok"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/icon_tiktok.svg" alt="Tiktok"></a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <ul id="sitemap" class="list-unstyled">
                     <li class="mt-3"><a href="sitemap.html">Sitemap</a></li>
                     <li class="mt-3"><a href="">Giới thiệu thành viên thực hiện</a></li>
@@ -264,15 +144,9 @@
             </div>
         </div>
     </div>
-    <div id="copyright" class="container-fluid text-center">
-        <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
-    </div>
 </footer>
-<script>
-    $(".regular").slick({
-        infinite: true,
-        slidesToShow: 5,
-    });
-</script>
+<div id="copyright" class="container-fluid text-center py-2">
+    <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
+</div>
 </body>
 </html>
