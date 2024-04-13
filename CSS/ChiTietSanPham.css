@@ -1,6 +1,6 @@
-.img-fluid {
-    width: 440px;
-    height: 440px;
+.img-sp{
+    width: 100%;
+    height: 540px;
 }
 .name-product{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,4 +8,25 @@
 }
 .btn.btn-group {
     border: 1px solid rgb(212, 211, 211);
+}
+.title1{
+    color: #011e60;
+}
+.title2{
+    border-bottom: 2px solid gray;
+    display: inline;
+}
+.thong-tin-chi-tiet h4,
+.thong-tin-chi-tiet h5 {
+    font-weight: bold;
+}
+.thong-tin-chi-tiet p{
+    font-size: 15px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(25%);
+}
+#slide-sp{
+    width: 100%;
 }
