@@ -17,7 +17,10 @@ section{
    font-size: 18px;
    color: #011E60;
 }
-
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
 .container {
     display: flex;
     flex-wrap: wrap;

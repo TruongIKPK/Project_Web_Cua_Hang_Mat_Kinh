@@ -1,0 +1,23 @@
+#thongTinTaiKhoan{
+    margin: auto;
+    box-sizing: border-box;
+    width: 700px;
+    height: 400px;
+}
+.container h2{
+    margin-top: 50px;
+    text-align: center;
+}
+#dsDiaChi{
+    margin: auto;
+    box-sizing: border-box;
+    width: 700px;
+    height: 400px;
+    text-align: center;
+}
+#thongTinTaiKhoan a{
+    text-decoration: none;
+}
+.diaChiitem{
+    text-align: left;
+}
