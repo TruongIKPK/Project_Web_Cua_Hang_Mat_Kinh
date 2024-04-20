@@ -1,0 +1,60 @@
+h2{
+    color: #011e60;
+    text-align: center;
+}
+
+.btn-light:hover {
+    background-color: #CCCCCC; 
+    color: #000000; 
+}
+
+.btn-light.active {
+    background-color: #000000; 
+    color: #FFFFFF; 
+}
+
+.btn-light {
+    transition: all 0.3s ease;
+    padding: 15px;
+    width: 100%; 
+    max-width: 350px; 
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn-group ul {
+    display: flex;
+    gap: 50px; 
+}
+
+#table-baohanh {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+#table-baohanh .p-left{
+    text-align: center;
+    font-weight: 600;
+}
+
+#table-baohanh .p-right{
+    text-align: justify;
+}
+
+#title-baohanh {
+    border-radius: 40px;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+.khong-km p{
+    font-size: 18px;
+}
+.khong-km h3{
+    color: #011e60;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách bảo hành</title>
+    <link rel="icon" href="../Acsset/LOGO/Logo.png">
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick-theme.css">
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.2-dist/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap-5.3.2-dist/slick-1.8.1/slick/slick.js"></script>
+    <link rel="stylesheet" href="../CSS/TongThe_style.css"> 
+    <link rel="stylesheet" href="../CSS/ChinhSachBaoHanh.css">
+    <script src="../JS/ChinhSachBaoHanh.js"></script>
+</head>
+<body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-md" id="header">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="../HTML/TrangChu.html" class="navbar-brand"><img src="../Acsset/LOGO/Logo.png" alt="logo" id="logo"></a>
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control me-2 hide-on-mobile" placeholder="Tìm gọng kính, kính mát, tròng kính..." id="search">
+                    <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
+                </form>
+                <a href="../HTML/HeThongCuaHang.html" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống cửa hàng EYE Y-T</span> </a>
+                <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"  id="dangKy"> Đăng ký</a></div>
+                <a href="../HTML/GioHang.html" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid ">
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto ms-5">
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Gọng kính</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính mát</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Kính áp tròng</a></li>
+                        <li class="nav-item"><a href="../HTML/DSSanPham..html" class="nav-link">Thương hiệu</a></li>
+                        <li class="nav-item"><a href="../HTML/TrangBlog.html" class="nav-link">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main style="margin-top: 130px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-3">
+                    <h2><b>Danh mục bảo hành</b></h2>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="btn-group d-flex justify-content-center">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <button class="btn btn-light active" onclick="showContent('gongkinh', this)">Gọng kính và kính mát</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-light" onclick="showContent('trongkinh', this)">Tròng kính</button>
+                        </li>
+                        <li>
+                            <button class="btn btn-light" onclick="showContent('khac', this)">Danh mục bảo hành khác</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row mt-3" id="table-baohanh">
+                <div class="col-md-12" id="gongkinhContent">
+                    <div class="row bg-secondary-subtle" id="title-baohanh">
+                        <div class="col-md-4 mt-3">
+                            <p class="p-left">Thời gian</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <p style="font-weight: 600; ">Chi tiết bảo hành</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mt-3 align-center">
+                            <p class="p-left">30 ngày</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <ul>
+                                <li>
+                                    <p class="p-right">Bảo hành 1 đổi 1: Quý khách được hỗ trợ đổi sản phẩm khác nếu có bất kỳ lỗi sản xuất nào như: rời mối hàn, gãy lò xo, bong lớp sơn.</p>
+                                </li>
+                                <li>
+                                    <p class="p-right">Trường hợp không còn sản phẩm trong kho, EYE-YT sẽ thay thế sản phẩm có giá trị tương đương. Quý khách vui lòng thanh toán phần chênh lệch khi chọn sản phẩm giá trị cao hơn.</p>
+                                </li>
+                                <li>
+                                    <p class="p-right">Trường hợp EYE-YT không thể sửa chữa gọng kính và không còn sản phẩm tương tự trong kho, cửa hàng sẽ thay thế bằng sản phẩm khác đồng giá hoặc tương đương. Quý khách vui lòng thanh toán phần chênh lệch khi chọn sản phẩm giá trị cao hơn.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mt-3 align-center">
+                            <p class="p-left">18 tháng</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <ul>
+                                <li>
+                                    <p class="p-right">Bảo hành 18 tháng miễn phí đối với các lỗi kỹ thuật do nhà sản xuất như: gãy lo xo, ve mũi, lỏng ốc vít, rời mối hàn.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mt-3 align-center">
+                            <p class="p-left">Trọn đời</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <ul>
+                                <li>
+                                    <p class="p-right">Quý khách được miễn phí các dịch vụ điều chỉnh, vệ sinh và bảo dưỡng trọn đời.</p>
+                                </li>
+                                <li>
+                                    <p class="p-right">Quý khách vui lòng giữ lại các phụ kiện, logo và các vật dụng liên quan đến sản phẩm để được bảo dưỡng.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 d-none" id="trongkinhContent">
+                    <div class="row bg-secondary-subtle" id="title-baohanh">
+                        <div class="col-md-4 mt-3">
+                            <p class="p-left">Thời gian</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <p style="font-weight: 600; ">Chi tiết bảo hành</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mt-3 align-center">
+                            <p class="p-left">90 ngày</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <ul>
+                                <li>
+                                    <p class="p-right">Bảo hành 1 đổi 1: Quý khách được hỗ trợ đổi sản phẩm khác nếu có bất kỳ lỗi sản xuất.</p>
+                                </li>
+                                <li>
+                                    <p class="p-right">Bảo hành tròng kính nếu quý khách không thể thích nghi với kính mới kể từ ngày nhận kính.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mt-3 align-center">
+                            <p class="p-left">06 tháng</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <ul>
+                                <li>
+                                    <p class="p-right">Bảo hành tròng kính 06 tháng với các lỗi như: bong tróc do lỗi kỹ thuật, rạn nứt tròng kính tách lớp Polarized, bong lớp tráng gương, nổ rộp tròng, bong lớp váng phủ, bể tròng Polycarbonat/ Trivex, và các trường hợp tương tự.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-none" id="khacContent">
+                    <div class="row bg-secondary-subtle" id="title-baohanh">
+                        <div class="col-md-4 mt-3">
+                            <p class="p-left">Thời gian</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <p style="font-weight: 600; ">Chi tiết bảo hành</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mt-3 align-center">
+                            <p class="p-left">Bảo hành/bảo trì nằm ngoài danh mục bảo hành</p>
+                        </div>
+                        <div class="col-md-8 mt-3">
+                            <ul>
+                                <li>
+                                    <p class="p-right">Bảo hành có giá trị tại các cửa hàng EYE-YT trên toàn quốc.</p>
+                                </li>
+                                <li>
+                                    <p class="p-right">Trường hợp những đuôi càng đặc biệt, không có sẵn EYE-YT sẽ tìm mẫu phù hợp hỗ trợ cho khách hàng.</p>
+                                </li>
+                                <li>
+                                    <p class="p-right">Trường hợp các Logo không có sẵn để thay thế EYE-YT sẽ phục chế tương đương.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container khong-km">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h1 style="text-align: center;">
+                        Các trường hợp <span style="color: rgb(228, 75, 75);">không được</span> bảo hành
+                    </h1>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h3>1. SỬ DỤNG SAI CÁCH</h3>
+                    <p>Sản phẩm bị thiệt hại, hư hỏng do khách hàng sử dụng sai cách, sơ suất hoặc thiếu sự cẩn trọng khi sử dụng và bảo quản kính, do tác động ngoại lực trong quá trình sử dụng.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>2. HÀNG KHUYẾN MÃI</h3>
+                    <p>Sản phẩm mắt kính được mua trong chương trình ưu đãi giảm giá, sẽ được EYE-YT hỗ trợ bảo trì, bảo dưỡng sản phẩm.</p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <h3>3. KHÔNG BẢO HÀNH NƯỚC XI, NƯỚC SƠN</h3>
+                    <p>EYE-YT không hỗ trợ bảo hành nước xi, nước sơn cho sản phẩm mắt kính.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>4. LÀM MẤT PHỤ KIỆN</h3>
+                    <p>Đối với trường hợp khách hàng làm mất, thiếu các phụ kiện: logo, càng, ốc vít đặc biệt của sản phẩm EYE-YT chỉ hỗ trợ miễn phí phục chế tương đối.</p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <h3>5. THIỆT HẠI DO TAI NẠN</h3>
+                    <p>Trong các trường hợp sản phẩm bị thiệt hại, hư hỏng do tai nạn hoặc thảm họa tự nhiên như: hỏa hoạn, động đất…</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>6. THIẾU THÔNG TIN KHI MUA HÀNG</h3>
+                    <p>EYE-YT không hỗ trợ bảo hành sản phẩm, khi khách hàng không cung cấp thông tin mua hàng.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+<footer class="mt-3">
+    <div class="container-fluid text-light">
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <h5>THÔNG TIN LIÊN HỆ</h5>
+                <p>Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</p>
+                <p>Số điện thoại: 0377200300</p>
+                <p>Email: yandteyes@gmail.com</p>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h5>THEO DÕI CHÚNG TÔI</h5>
+                <ul id="lien_he" class="list-unstyled">
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/logo-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/IKPKTRUONG/"><img src="../Acsset/ICON/icon_tiktok.svg" alt="Tiktok"></a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mt-3">
+                <h5>CHÍNH SÁCH</h5>
+                <ul id="chinh-sach" class="list-unstyled">
+                    <li class="mt-2"><a href="../HTML/DieuKhoanDichVu.html">Điều khoản dịch vụ</a></li>
+                    <li class="mt-2"><a href="../HTML/ChinhSachThanhToan.html">Chính sách thanh toán</a></li>
+                    <li class="mt-2"><a href="../HTML/ChinhSachBaoHanh.html">Chính sách bảo hành</a></li>
+                    <li class="mt-2"><a href="../HTML/ChinhSachDoiTra.html"">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul id="sitemap" class="list-unstyled">
+                    <li class="mt-3"><a href="../HTML/sitemap.html">Sitemap</a></li>
+                    <li class="mt-3"><a href="../HTML/GioiThieuThanhVien.html"">Giới thiệu thành viên thực hiện</a></li>
+                    <li class="mt-3"><a href="../HTML/GioiThieu.html">Giới thiệu về website</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="copyright" class="container-fluid text-center py-2">
+    <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
+</div>
+</body>
+</html>

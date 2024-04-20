@@ -60,7 +60,7 @@ footer .row .col-md-5{
     width: 22px;
     height: 22px;
 }
-#sitemap a{
+#sitemap a,#chinh-sach a{
     color: #FFFFFF; 
     text-decoration: none;
 }
