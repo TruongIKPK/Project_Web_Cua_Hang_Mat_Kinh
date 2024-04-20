@@ -11,3 +11,10 @@ function decrementQuantity() {
         document.getElementById('quantity').innerText = quantity;
     }
 }
+function changeBorderColor(button) {
+    var buttons = document.querySelectorAll('.btn.btn-group');
+    buttons.forEach(function(btn) {
+        btn.style.borderColor = ""; 
+    });
+    button.style.borderColor = "#011e60"; 
+}
