@@ -18,3 +18,8 @@ function changeBorderColor(button) {
     });
     button.style.borderColor = "#011e60"; 
 }
+
+function redirectToCartPage() {
+    // Chuyển hướng đến trang giỏ hàng
+    window.location.href = '../HTML/GioHang.html';
+}
