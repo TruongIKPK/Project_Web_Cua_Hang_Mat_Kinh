@@ -56,3 +56,10 @@ a{
 .form-select{
     height: 40px;
 }
+#loginPassword5{
+    font-size: 20px;
+}
+
+#loginEmail1{
+    font-size: 20px;
+}
