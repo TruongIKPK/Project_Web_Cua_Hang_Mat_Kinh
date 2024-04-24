@@ -73,12 +73,12 @@
                     <td>4,280,000₫</td>
                     <td>
                         <div class="soLuong">
-                            <button>-</button>
-                            <input type="text" value="4" readonly>
-                            <button>+</button>
+                            <button id="giam1" onclick="decrementQuantity1()">-</button>
+                            <input type="text" value="1" readonly id="quantity1">
+                            <button id="tang1" onclick="incrementQuantity1()">+</button>
                         </div>
                     </td>
-                    <td>17,120,000₫</td>
+                    <td id="thanhtien1">4,280,000₫</td>
                 </tr>
                 <td class="hinhanh"><a href="../HTML/ChiTietSanPham.html"><img src="../Acsset/IMG_SANPHAM/KinhApTrong/1.jpg" alt=""></a></td>
                     <td>
@@ -92,12 +92,12 @@
                     <td>4,280,000₫</td>
                     <td>
                         <div class="soLuong">
-                            <button>-</button>
-                            <input type="text" value="4" readonly>
-                            <button>+</button>
+                            <button id="giam2" onclick="decrementQuantity2()">-</button>
+                            <input type="text" value="1" readonly id="quantity2">
+                            <button id="tang2" onclick="incrementQuantity2()">+</button>
                         </div>
                     </td>
-                    <td>17,120,000₫</td>
+                    <td id="thanhtien2">4,280,000₫</td>
                 </tr>
             </tbody>
         </table>
@@ -170,5 +170,6 @@
 <div id="copyright" class="container-fluid text-center py-2">
     <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
 </div>
+<script src="../JS/GioHang.js"></script>
 </body>
 </html>
