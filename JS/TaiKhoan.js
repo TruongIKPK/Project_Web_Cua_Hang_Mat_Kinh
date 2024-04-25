@@ -75,8 +75,8 @@ $("#login1").click(function(event){
     dangNhap(event);
 });
 
-export function KiemTraHoTen(){
-    let reg = /^([A-Z][a-zA-Z]+[\s]?)*$/;
+function KiemTraHoTen(){
+    let reg = /^([A-Z][a-zA-Z]*[\s]?)*$/;
     if($("#registerName6").val() == "" || $("#registerName6").val() == null){
         $("#errhoten").show();
         $("#errhoten").text("Không được rỗng");
@@ -97,7 +97,7 @@ export function KiemTraHoTen(){
 $("#registerName6").blur(function(){
     KiemTraHoTen();
 });
-export function KiemTraLoiSDT1(){
+function KiemTraLoiSDT1(){
     let reg = /^0[0-9]{9}$/;
     if($("#sDT").val() == "" || $("#sDT").val() == null){
         $("#span_sDT").show();
@@ -142,7 +142,7 @@ $("#email12").blur(function(){
     KiemTraLoiEmail2();
 });
 
-export function KiemTraMatKhau1(){
+function KiemTraMatKhau1(){
     let reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,20}$/;
     if($("#registerPwd2").val() == "" || $("#registerPwd2").val() == null){
         $("#errPwd1").show();
@@ -185,7 +185,7 @@ function KiemTraMatKhau2(){
 $("#registerPwd1").blur(function(){
     KiemTraMatKhau2();
 });
-export function KiemTraNgaySinh(){
+function KiemTraNgaySinh(){
     let hienTai =new Date();
     let ngaySinh_ = new Date($("#registerName2").val());
     let age = hienTai.getFullYear() - ngaySinh_.getFullYear();
