@@ -52,13 +52,15 @@ function KiemTraMatKhau(){
 $("#loginPassword5").blur(function(){
     KiemTraMatKhau();
 });
-function dangNhap(){
+function dangNhap(event){
     if(KiemTraEmail() && KiemTraMatKhau()){
         var savedAccount = localStorage.getItem("account");
         if (savedAccount) {
             savedAccount = JSON.parse(savedAccount);
             if ($("#loginEmail1").val() === savedAccount.email && $("#loginPassword5").val() === savedAccount.password) {
                 alert("Đăng nhập thành công");
+                event.preventDefault();
+                window.location.href = '../HTML/Acount.html';
             } else {
                 alert("Email hoặc mật khẩu không đúng");
             }
@@ -69,11 +71,11 @@ function dangNhap(){
         alert("Vui lòng điền đầy đủ thông tin");
     }
 }
-$("#login1").click(function(){
-    dangNhap();
+$("#login1").click(function(event){
+    dangNhap(event);
 });
 
-function KiemTraHoTen(){
+export function KiemTraHoTen(){
     let reg = /^([A-Z][a-zA-Z]+[\s]?)*$/;
     if($("#registerName6").val() == "" || $("#registerName6").val() == null){
         $("#errhoten").show();
@@ -95,7 +97,7 @@ function KiemTraHoTen(){
 $("#registerName6").blur(function(){
     KiemTraHoTen();
 });
-function KiemTraLoiSDT1(){
+export function KiemTraLoiSDT1(){
     let reg = /^0[0-9]{9}$/;
     if($("#sDT").val() == "" || $("#sDT").val() == null){
         $("#span_sDT").show();
@@ -140,7 +142,7 @@ $("#email12").blur(function(){
     KiemTraLoiEmail2();
 });
 
-function KiemTraMatKhau1(){
+export function KiemTraMatKhau1(){
     let reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,20}$/;
     if($("#registerPwd2").val() == "" || $("#registerPwd2").val() == null){
         $("#errPwd1").show();
@@ -183,7 +185,7 @@ function KiemTraMatKhau2(){
 $("#registerPwd1").blur(function(){
     KiemTraMatKhau2();
 });
-function KiemTraNgaySinh(){
+export function KiemTraNgaySinh(){
     let hienTai =new Date();
     let ngaySinh_ = new Date($("#registerName2").val());
     let age = hienTai.getFullYear() - ngaySinh_.getFullYear();
@@ -219,14 +221,18 @@ function KiemTraDongYChinhSach(){
     $("#errDongY").hide();
     return true;
 }
-$("#logup").click(function() {  
+function dangKy(event){
     if(KiemTraHoTen() && KiemTraLoiEmail2() && KiemTraLoiSDT1() && KiemTraMatKhau1() && KiemTraMatKhau2() && KiemTraNgaySinh() && KiemTraDongYChinhSach() ){
         let name = $("#registerName6").val();
         let gioitinh = $("#gioitinh").val();
         let phone = $("#sDT").val();
         let email = $("#email12").val();
         let password = $("#registerPwd1").val();
-        let address =  $("#city").val(); + $("#district").val() + $("#ward").val() + $("#registerName1").val();
+        let city = $("#city").find(":selected").text();
+        let district = $("#district").find(":selected").text();
+        let ward = $("#ward").find(":selected").text();
+        let address1 = city + ', ' + district + ', ' + ward;
+        let address =  address1;
         let birthday = $("#registerName2").val();
         let account = {
             name: name,
@@ -239,7 +245,13 @@ $("#logup").click(function() {
         };
         localStorage.setItem("account", JSON.stringify(account));
         alert("Đăng ký thành công!");
+        event.preventDefault();
+        window.location.href = '../HTML/Acount.html';
     }else{
         alert("Vui lòng điền đầy đủ thông tin");
+        return false;
     }
+}
+$("#logup").click(function(event) {
+    dangKy(event);
 });

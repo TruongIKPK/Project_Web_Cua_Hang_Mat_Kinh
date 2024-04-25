@@ -20,6 +20,5 @@ function changeBorderColor(button) {
 }
 
 function redirectToCartPage() {
-    // Chuyển hướng đến trang giỏ hàng
     window.location.href = '../HTML/GioHang.html';
 }

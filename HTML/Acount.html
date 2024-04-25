@@ -27,7 +27,7 @@
                     <button class="btn"><img src="../Acsset/ICON/bx-search.svg" alt=""></button>
                 </form>
                 <a href="../HTML/HeThongCuaHang.html" class="nav-link"><img src="../Acsset/ICON/bx-store-alt.svg" alt="home"><span class="hide-on-mobile">Hệ thống cửa hàng EYE Y-T</span> </a>
-                <div><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"  id="dangKy"> Đăng ký</a></div>
+                <div id="tenDangNhap"><img src="../Acsset/ICON/bx-user.svg" alt="user"> <a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap">Đăng nhập </a><span class="hide-on-mobile ">|</span><a href="../HTML/TaiKhoan.html" class="hide-on-mobile dangnhap"  id="dangKy"> Đăng ký</a></div>
                 <a href="../HTML/GioHang.html" class="nav-link "><img src="../Acsset/ICON/bx-cart.svg" alt="cart"><span class="hide-on-mobile">Giỏ hàng</span></a>
             </div>
         </nav>
@@ -81,7 +81,7 @@
         <li class="nav-item" role="presentation">
             <button
                 class="nav-link"
-            >Đăng Xuất
+            > <a href="../HTML/TrangChu.html">Đăng Xuất</a>
             </button>
         </li>
     </ul>
@@ -98,37 +98,45 @@
                 <h2>Thông Tin Tài Khoản</h2>
                 <div class="row mt-3">
                     <div class="col-4">Họ tên</div>
-                    <div class="col-6">Lê Nguyễn Phi Trường</div>
-                    <div class="col-2"><a href="">Sửa</a></div>
+                    <div class="col-6" id="hoTen">Lê Nguyễn Phi Trường</div>
+                    <div class="col-2" id="suaTen"><a href="">Sửa</a></div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-4">Ngày sinh</div>
-                    <div class="col-6">21/03/2004</div>
-                    <div class="col-2"><a href="">Sửa</a></div>
+                    <div class="col-6" id="ngaySinh">21/03/2004</div>
+                    <div class="col-2" id="suaNgaySinh"><a href="">Sửa</a></div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-4">Email</div>
-                    <div class="col-6">phitruong20192020@gmail.com</div>
-                    <div class="col-2"><a href="">Sửa</a></div>
+                    <div class="col-6" id="email">phitruong20192020@gmail.com</div>
+                    <div class="col-2"><a href=""></a></div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-4">Số điện thoại</div>
-                    <div class="col-6">0374425749</div>
-                    <div class="col-2"><a href="">Sửa</a></div>
+                    <div class="col-6" id="soDienThoai">0374425749</div>
+                    <div class="col-2" id="suasoDienThoai"><a href="">Sửa</a></div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-4">Giới tính</div>
-                    <div class="col-6">Nam</div>
-                    <div class="col-2"><a href="">Sửa</a></div>
+                    <div class="col-6" id="gioiTinh">Nam</div>
+                    <div class="col-2" id="suagioiTinh"><a href="">Sửa</a></div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-4">Địa chỉ</div>
-                    <div class="col-6">12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TPHCM</div>
-                    <div class="col-2"><a href="">Sửa</a></div>
+                    <div class="col-6" id="diaChi">12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TPHCM</div>
+                    <div class="col-2"><a href=""></a></div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-4">Mật khẩu</div>
-                    <div class="col-8"><a href="">Đổi mật khẩu</a></div>
+                    <div class="col-8" id="doimatkhau"><a href="">Đổi mật khẩu</a></div>
+                </div>
+                <div class="row mt-3" id="inputMkCu">
+                    <div class="col-4">Mật khẩu cũ</div>
+                    <input id="mkcu" type="password" name=""  class="col-8 form-control">
+                </div>
+                <div class="row" id="inputMkMoi" >
+                    <div class="col-4">Mật khẩu mới</div>
+                    <input id="mkmoi" type="password" name="" class="col-8 form-control">
                 </div>
             </div>            
         </div>
@@ -147,7 +155,7 @@
                 </div>
                 <div class="row mt-3 diaChiitem">
                     <div class="col-1">1</div>
-                    <div class="col-11">12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TPHCM</div>
+                    <div class="col-11" id="diaChis1">12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, TPHCM</div>
                 </div>
              </div>
         </div>
@@ -179,13 +187,13 @@
                     <li class="mt-2"><a href="../HTML/DieuKhoanDichVu.html">Điều khoản dịch vụ</a></li>
                     <li class="mt-2"><a href="../HTML/ChinhSachThanhToan.html">Chính sách thanh toán</a></li>
                     <li class="mt-2"><a href="../HTML/ChinhSachBaoHanh.html">Chính sách bảo hành</a></li>
-                    <li class="mt-2"><a href="../HTML/ChinhSachDoiTra.html"">Chính sách đổi trả</a></li>
+                    <li class="mt-2"><a href="../HTML/ChinhSachDoiTra.html">Chính sách đổi trả</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <ul id="sitemap" class="list-unstyled">
                     <li class="mt-3"><a href="../HTML/sitemap.html">Sitemap</a></li>
-                    <li class="mt-3"><a href="../HTML/GioiThieuThanhVien.html"">Giới thiệu thành viên thực hiện</a></li>
+                    <li class="mt-3"><a href="../HTML/GioiThieuThanhVien.html">Giới thiệu thành viên thực hiện</a></li>
                     <li class="mt-3"><a href="../HTML/GioiThieu.html">Giới thiệu về website</a></li>
                 </ul>
             </div>
@@ -195,5 +203,6 @@
 <div id="copyright" class="container-fluid text-center py-2">
     <p>Copyright © 2024 EYE-YT. All Rights Reserved.</p>
 </div>
+<script src="../JS/Acount.js"></script>
 </body>
 </html>
