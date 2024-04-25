@@ -249,6 +249,7 @@ function dangKy(event){
         window.location.href = '../HTML/Acount.html';
     }else{
         alert("Vui lòng điền đầy đủ thông tin");
+        event.preventDefault();
         return false;
     }
 }
